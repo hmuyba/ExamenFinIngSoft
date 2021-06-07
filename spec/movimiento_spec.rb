@@ -50,6 +50,21 @@ RSpec.describe "mover correctamente el auto" do
         expect(resultado).to eq([[3,4], "N"])
     end
 
+    it "deberia devolver [1,3] al introducir como texto el comando IAIAIAIAA, la posicion inicial 1,2 y la orientacion inicial N" do
+        posicionInicial = "1,2"
+        orientacionInicial = "N"
+        comandoAvance = "IAIAIAIAA"
+        resultado = calcularCamino(posicionInicial, orientacionInicial, comandoAvance)
+        expect(resultado).to eq([[1,3], "N"])
+    end
+    it "deberia devolver [1,1] al introducir como texto el comando AADAADADDA, la posicion inicial 3,3 y la orientacion inicial E" do
+        posicionInicial = "3,3"
+        orientacionInicial = "E"
+        comandoAvance = "AADAADADDA"
+        resultado = calcularCamino(posicionInicial, orientacionInicial, comandoAvance)
+        expect(resultado).to eq([[1, 1], "E"])
+    end
+
 
 
     
