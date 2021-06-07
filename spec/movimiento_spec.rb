@@ -34,6 +34,14 @@ RSpec.describe "mover correctamente el auto" do
         expect(resultado).to eq([[2,3], "E"])
     end
 
+    it "deberia avanzar devoler [2,3] introducida la posicion 3,3 orientacion E y comando A" do
+        posicionInicial = "3,3"
+        orientacionInicial = "S"
+        comandoAvance = "A"
+        resultado = calcularCamino(posicionInicial, orientacionInicial, comandoAvance)
+        expect(resultado).to eq([[3,2], "S"])
+    end
+
 
 
     
