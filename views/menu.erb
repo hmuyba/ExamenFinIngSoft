@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+</html>
+
+<body>
+    
+    <div class="principal">
+
+    <main 
+    <% if $size.to_i == 5 %>
+    <h1 Escogio el tamanio 5x5</h1>
+    <%elsif $size.to_i == 4 %>
+    <h1 Escogio el tamanio 4x4</h1>
+    <%elsif $size.to_i == 3 %>
+    <h1 Escogio el tamanio 3x3</h1>
+    <%end%>>
+
+    </main>
+
+
+
+     <div class="comandos">
+
+        
+        <form method='post' action ='/ventanaComandos'>
+        <p>Introduzca la posicion inicial (1,2)(3,3)</p>
+            <input type='text' value='PosInicial' name='posicionInicial'>
+      
+        <p>Introduzca la orientacion (N, E, O, S)</p>
+            <input type='text' name='orientacion'>
+
+            <br><br>
+            <br>
+            <input type='submit' value='Ingresar' class="boton">
+        </form>
+        
+
+       
+    </div>
+
+
+    </div>
+
+   
+</body>
