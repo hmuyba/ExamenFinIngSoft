@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="css/juego.css"/> 
+</head>
+</html>
+
+<body>
+    <h1> Resultados Finales </h1>
+    <div class="principal">
+
+    </main>
+
+         <div class="comandos">
+            <%if @resultado[0][0] > 0  and @resultado[0][1] > 0 and @resultado[0][0] < 6 and @resultado[0][1] < 6%>
+            <p>La posicion final es: </p> <%=@resultado%>
+            <%else%>
+            <p>OH NO! El vehiculo ha excedido los limites del camino</p> <%=@resultado%>
+            <%end%>
+       
+
+<br><br><br>
+            <form method='post' action ='/menu'>
+            <input type='submit' value='VOLVER A JUGAR' class="boton">
+    </div>
+    </div>
+</body>
